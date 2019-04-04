@@ -46,12 +46,12 @@ There is no incumbent in post.
 Buyers will use the essential and nice-to-have skills and experience to help them evaluate suppliers’ technical competence.
 ### Essential skills and experience
  - Experience in full software development life cycle of web application and microservices
- - Have demonstrable experience in development of complex cloud-based applications using the following technologies: Node.js, Kubernetes, AWS (or GCE/Azure), DynamoDB, S3
+ - Have demonstrable experience in development of complex cloud-based applications using the following technologies: Node.js, Kubernetes, AWS (or GCP/Azure), DynamoDB, S3
  - Have demonstrable experience of complex Node.js development and is comfortable writing testable, secure, stable, resilient serverside code
  - Knowledge and able to design microservices with appropriate metrics exposed.
  - Has demonstrable evidence of vanilla JavaScript/TypeScript development (this, closures, currying, inheritance, ES6)
  - Have demonstrable experience of successfully integrating systems via APIs, including on-premise and other cloud-based services.
- - Have demonstrable experience working on projects using open source technology within AWS (or GCE/Azure0) cloud hosted
+ - Have demonstrable experience working on projects using open source technology within AWS (or GCP/Azure0) cloud hosted
  - Have demonstrable expertise in automated testing and DevOps approaches
  - Capable of delivering high-quality services with automated testing processes.
  - Have demonstrable experience working with Git version control systems in frequent software release cycles
