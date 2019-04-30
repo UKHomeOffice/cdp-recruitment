@@ -6,6 +6,7 @@ import (
 	"log"
 	"crypto/sha1"
 	"os"
+	"os/user"
 	"encoding/hex"
 	"bufio"
 	"strconv"
@@ -17,12 +18,18 @@ func main() {
 	if os.Getenv("VERSION") == "" {
 		log.Fatal("MUST DEFINE A VERSION")
 	}
+
 	i1, err := strconv.Atoi(os.Getenv("VERSION"))
+	fmt.Println("running version", i1)
 	if i1 < 32110 {
-		log.Fatal("VERSION MUST BE 32110 OR GREATER")
+		log.Fatal("VERSION ENV VAR MUST BE 32110 OR GREATER")
 	}
 
-	fmt.Println("running version", i1)
+	user, err := user.Current()
+	fmt.Println("running as uid", user.Uid)
+	if user.Uid != "1000" {
+		log.Fatal("MUST RUN AS USER UID 1000")
+	}
 
 	file, err := os.Open("/myemailaddress.txt")
 	if err != nil {
